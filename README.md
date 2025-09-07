@@ -1,2 +1,2 @@
-# terraform-module-aws
+# Terraform Module AWS
 Exercícios de Terraform
