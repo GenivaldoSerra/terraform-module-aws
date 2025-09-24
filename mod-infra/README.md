@@ -1,1 +1,0 @@
-# Infra AWS com Load Balancer e Autoscale 🚀 🚀 🚀
