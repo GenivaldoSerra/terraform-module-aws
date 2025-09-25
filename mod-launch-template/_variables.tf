@@ -21,5 +21,5 @@ variable "resource_name" {
 variable "tags" {
   description = "A map of tags to assign to the launch template."
   type        = map(string)
-  default = {}
+  default     = {}
 }
