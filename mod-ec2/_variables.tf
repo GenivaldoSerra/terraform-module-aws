@@ -49,7 +49,7 @@ variable "tags" {
   default     = {}
 }
 
- # Configuração do IMDSv2
+# Configuração do IMDSv2
 variable "metadata_http_endpoint" {
   description = "Enable or disable the HTTP metadata endpoint"
   type        = string
