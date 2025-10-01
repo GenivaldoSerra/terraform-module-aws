@@ -1,9 +1,7 @@
 locals {
-
-  Managed_By = "Terraform"
-  Project    = "S3_Pipeline"
   tags = {
-    "Managed_By" = Managed_By
-    "Project"    = Project
+    Environment = "development"
+    Project     = "Teste"
+    Managed_By  = "Terraform"
   }
 }

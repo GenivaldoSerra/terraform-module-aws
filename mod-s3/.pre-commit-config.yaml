@@ -1,0 +1,27 @@
+repos:
+  # Hook para formatação do Terraform
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.92.0
+    hooks:
+      - id: terraform_fmt
+        args:
+          - --args=-diff
+          - --args=-write=false
+      - id: terraform_validate
+      - id: terraform_docs
+        args:
+          - --hook-config=--add-to-existing-file
+          - --hook-config=--create-file-if-not-exist=true
+        verbose: true
+
+  # Hooks gerais úteis
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-merge-conflict
+      - id: detect-aws-credentials
+        args: ['--allow-missing-credentials']
+      - id: detect-private-key
